@@ -12,10 +12,11 @@ body{
     border-radius: 20px;
     margin: 50px;
     padding: 30px;
-    box-shadow: 0 0 20px rgb(249, 249, 249);
+    box-shadow: 0 5px 20px rgb(255, 255, 255);
     max-width: 500px;
-    transition: color 5s ease, font-size 5s ease; /* Example 1 */
+    animation: fadeIn 5s ease forwards;
 }
+
 
 a{
     color: white;
@@ -51,7 +52,18 @@ p{
 }
 iframe{
     margin: 50px;
-    box-shadow: 0 0 20px white;
-    transition: all 5s ease; /* Example 2 */
-/* OR */
+    box-shadow: 0 15px 20px white;
+    animation: fadeIn 5s ease forwards;
 }
+
+@keyframes fadeIn {
+    from {
+      transform: translateX(-100%);
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+    }
+    to {
+      transform: translateX(0);
+      background-color:rgb(192, 164, 221);
+    }
+  }
