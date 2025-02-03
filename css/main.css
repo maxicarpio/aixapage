@@ -30,6 +30,8 @@ h1{
   filter: none;
   text-decoration: none;
   margin-top: 200px;
+  transition: color 5s ease, font-size 5s ease; /* Example 1 */
+/* OR */
 }
 
 .night {
