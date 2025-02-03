@@ -11,6 +11,9 @@ body{
     margin: 0;
 }
 
+
+
+
 .background{
     background-color: rgba(0, 0, 0, 0.594);
     width: auto;
@@ -19,15 +22,13 @@ body{
     margin-top: 200px;
     padding: 40px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.356);
-    transition: all 5s ease; /* Example 2 */
-/* OR */
+    animation: fadeIn 5s ease forwards;
 }
 
 h1{
     font-family: Montserrat;
     text-align: center;
-    transition: transform 0.2s ease-in-out, background-color 0.5s ease-in-out; /* Animaciones */
-}
+} 
 
 div{
     align-items: center;
@@ -43,9 +44,9 @@ a{
     display: flex;
     text-align: center;
     align-items: center;
-    transition: transform 0.2s ease-in-out, background-color 0.5s ease-in-out; /* Animaciones */
+    transition: transform 0.2s ease-in-out, background-color 0.5s ease-in-out; /* Animaciones */ 
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.283);
-}
+} !important
 
 a:hover{
     transform: scale(1.09);
@@ -55,5 +56,17 @@ a:hover{
 a:active{
     transform: scale(1);
     background-color: rgba(0, 0, 0, 0.447);
-
 }
+
+@keyframes fadeIn {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+      color: black;
+    }
+    to {
+      background-color: rgba(0, 0, 0, 0.594);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.377);
+      color: white;
+    }
+  }
