@@ -30,8 +30,17 @@ h1{
   filter: none;
   text-decoration: none;
   margin-top: 200px;
-  transition: color 5s ease, font-size 5s ease; /* Example 1 */
-/* OR */
+  animation: fadeIn 10s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    color: #000;
+  }
+  to {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.285);
+  }
 }
 
 .night {
